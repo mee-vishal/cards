@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            min-height:700px;
+        }
+   .card_1{
+    width: 30rem    ;
+    /* height:300px; */
+    background-color: #f7f1f1;
+    border-radius:30px 30px 30px 30px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+    
+   }
+   .summary_image{
+    width:30rem;
+    border-radius:30px 30px 0px 0px;
+
+   }
+   .main_heading{
+    text-align:center;
+   }
+   .mypara{
+    margin:auto;    
+    text-align: center;
+    padding-left:20px;
+    padding-right:20px;
+   }
+   .para{
+    width:20rem;
+    /* background-color: #392355; */
+    margin:auto;
+   }
+   .plan{
+    width:20rem;
+    margin:auto;
+    background-color: blue;
+    border-radius:10px 10px;
+    margin-top:2rem;
+padding:1rem 1rem ;   
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+    
+   }
+   .musiclogo{
+    height:2rem;
+    width: 2rem;
+    border-radius:20px 20px  ;
+    
+   }
+   .price{
+    margin:0;
+    color:white;
+    margin-left:1rem;
+   }
+   .change{
+    color:rgb(249, 249, 249);
+    
+   }
+   .leftbox{
+    /* background-color:aqua; */
+   }
+   .rightbox{
+    margin-left: 4rem;
+    margin-top: 0.4rem;
+    /* background-color:aqua; */
+   }
+   .leftbox{
+    display: flex;
+    flex-direction: row;
+   }
+   .payment{
+    background-color: bisque;
+    width:22rem;
+    margin:auto;
+    background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+border-radius:0.7rem;
+box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+   }
+   .paymentname{
+    font-size: 1.2rem;
+    text-align: center;
+    padding:1rem 1rem;
+   }
+   .cancelorder{
+    margin-top:1rem;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top:2rem;
+    margin-bottom:2rem;
+   }
+   .cancelorder a{
+    text-decoration: none;
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.65rem;
+   }
+</style>
+
+</head>
+
+ 
+<body>
+    <div class="main">
+        <div class="card_1">
+            <img src="summary.jpg"  class="summary_image"alt="">
+            <h1 class="main_heading">Order summary</h1>
+<div class="para">
+    <p class="mypara">Lorem ipsum dolor sit amet consectetur adipisicinuptate iusto tempore deserunt consectetur.   </p>
+
+</div>
+<div class="plan">
+    <div class="leftbox">
+    <img src="OIP.jpeg" class="musiclogo" alt="">
+    <p class="price"> Annual plan <br>$50/month</p>
+    
+
+</div>
+<div class="rightbox">
+<a href="change" class="change">change</a>
+</div>
+
+</div>
+<div class="payment">
+    <h3 class="paymentname">Proceed to Payment</h3>
+</div>
+<p class="cancelorder"><a href="" >cancel order</a></p>
+        </div>
+        
+    </div>
+</body>
+</html>
