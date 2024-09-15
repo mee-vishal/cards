@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+    }
+ 
+        .main{
+            
+            
+            width:80%;
+            height:auto;
+            margin:auto;
+            display:grid;
+            row-gap:2rem;
+            column-gap:1rem;
+            /* grid-template-rows: repeat(1,1fr); */
+            grid-template-columns: repeat(4,1fr);
+            margin-top: 4rem;
+            margin-bottom:4rem;
+        }
+        .container{
+           height:20rem;
+           padding-bottom:3rem;
+            background-color:aliceblue;
+            border-radius:1rem 1rem;
+            /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px; */
+        }
+        /* .c1, .c2 ,.c3 ,.c4{
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .c5, .c6 ,.c7 ,.c8{
+            grid-row-start: 4;
+            grid-row-end: 6 ;
+        } */
+        .header{
+            grid-column-start: 1;
+            grid-column-end: 5;
+    height:4rem;
+    display:flex;
+    /* justify-content: space-around; */
+    flex-direction: row;
+    background-color: #8BC6EC;
+background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
+            
+        }
+      .newgadgets{
+        height:100%;
+        width:100%; 
+
+      }
+.marginleft{
+    margin-left:1rem;
+}
+.items{
+    display:flex;
+    flex-direction: row;
+justify-content: space-between;
+margin-top:1rem;
+
+}
+.person{
+    height:2rem;
+    width:2rem;
+}
+.item1{
+    display:flex;
+    flex-direction: row;
+}
+.items1_name{
+    margin-left:0.5rem;
+}
+.mybutton{
+    margin-right:1rem;
+    margin-top:1rem;
+    padding:0.2rem;
+    background-color: aliceblue;
+    border:0.1rem solid rgb(11, 9, 9);
+    border-radius: 0.4rem;
+    transition: 200ms;
+    font-size:0.9rem;
+}
+.newgadgets{
+    border-radius:1rem 1rem 0rem 0rem;
+    transition: 200ms;
+    
+}
+h4{
+    color:rgb(78, 136, 231);    
+}
+h3{
+    font-family:sans-serif;
+}
+.headingimg{
+    height:4rem;
+    width:10rem;
+    border-radius:1rem 0 0 1rem;
+    
+}
+.headingmain{
+    font-size:2rem;
+    margin-top:0.5rem;
+    margin-left:4rem;
+    color:#002fa7;
+    letter-spacing: 0.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+.connect{
+    margin-left:22rem;
+    margin-top:1rem;
+    padding:0.5rem;
+    font-size: 1rem;
+    font-family:monospace;
+    letter-spacing: 0.0125rem;
+    font-weight: 400;
+    border-radius: 0.5rem;
+    border:none;
+    background-color: #4158D0;
+    background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #dce3ea 0%, #E0C3FC 100%);
+/* background-color: aliceblue; */
+border:0..1rem solid #8EC5FC
+
+
+
+
+
+
+
+}
+
+
+.image{
+    height:50%;
+    width:100%;
+    background-size: cover;
+    overflow:hidden;
+    border-radius:1rem 1rem 0rem 0rem;
+
+}
+.container:hover .newgadgets{
+transform: scale(1.1);
+transition-duration: 200ms;
+}
+
+@media (min-width: 813px) and (max-width: 1229px) {
+    html{
+        font-size: 62.5%;
+    }
+}
+@media (max-width: 800px) {
+  .main {
+    grid-template-columns:repeat(2,1fr);
+    grid-template-rows: auto;
+  }
+  .header{
+    grid-column-start:1;
+    grid-column-end:3;
+  }
+
+}
+@media (max-width: 429px) {
+  
+  .main {
+    grid-template-columns:repeat(1,1fr);
+    grid-template-rows: auto;
+  }
+  .header{
+    grid-column-start:1;
+    grid-column-end:2;
+  }
+  .header{
+    background-image: url("OIP.jpeg");
+    background-position: center;
+    background-size: cover;
+    overflow:hidden;
+  }
+  
+}
+
+.logo{
+    background-image: url("OIP.jpeg");
+    background-size: cover;
+    height:4rem;
+    width:20%;
+    background-position: center ;
+}
+.ul-list{
+    list-style-type: none;
+    display:flex;
+    gap:5rem;
+    font-weight: 500    ;
+    
+    
+}
+.links{
+    width:50%;
+    display:flex;
+    justify-content: center;
+    background-color: #dce3ea;
+    text-align: center;
+    height:4rem;
+    font-size: 1.2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    align-items: center;
+    padding:auto;
+}
+.buttons{
+    width:30%;
+    height:4rem;
+    background-color: #dce3ea;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    
+}
+.connect-button{
+    padding: 0.4rem;
+    font-size: 1rem;
+    margin-right:1rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* background-color: #8BC6EC;
+background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%); */
+background: linear-gradient(to right, #6481b5, #6586bf, #6785b5);
+color:rgb(240, 248, 255);
+font-weight: 400;
+border:0.1px solid rgb(182, 157, 157);
+    border-radius:0.3rem;
+}
+.responsivenav{
+    height:4rem;
+    width:3rem;
+    background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+
+    display:none;
+}
+ul li:hover{
+    color:rgb(14, 6, 246);
+    cursor:pointer;
+    /* text-decoration: underline; */
+    /* transition:1s; */
+    
+}
+
+@media (max-width: 380px) {
+    .header {
+        position: fixed;
+        top: 2px;
+        margin-bottom:2rem;
+      margin-left:0px;
+        /* width: 100%; */
+        width:75rem;
+       
+        border-radius:0;
+        z-index: 1000; /* Ensures the header stays on top of other content */
+    }
+    .logo{
+        display:none;
+    }
+    .c1{
+        margin-top:2rem
+    }
+    .ul-list{
+        display:block;
+       
+        
+    }
+    .responsivenav{
+        display:block;
+        width:6rem;
+        background-image: url('side.png');
+        background-size: cover;
+        background-position: center;
+    }
+    .buttons{
+        display:none;
+    }
+    .header{
+        background-color: #002fa7;
+        background-size: cover;
+        background-position: center;
+        width:80%;
+    }
+ .links{
+    display:flex;
+    position:relative;
+    top:5rem;
+    width:100%;
+    padding:5rem;
+    height:30rem;
+    flex-direction: row;
+    
+
+ }
+ ul li{
+    margin-bottom:4rem;
+ }
+   
+
+ 
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container header" style="height:4rem;">
+            <div class="logo"></div>
+       <div class="links">
+        <ul class="ul-list">
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>EXPLORE</li>
+            <li>EVENTS</li>
+        </ul>
+       </div>
+       <div class="buttons"><button class="connect-button">CONNECT US</button></div>
+       <div class="responsivenav"  onclick="toggleMenu()"></div>
+        </div>
+        <div class="container c1"><div class="image">
+            <img src="newgadgets.jpeg" alt="" class="newgadgets">
+        </div>
+        <h3 class="c1heading" style="margin-left:1rem;margin-top:1rem;">
+            New Gadgets released
+        </h3>
+        <p class="marginleft" style="margin-top:1rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, aspernatur.</p>
+    <div class="items marginleft">
+<div class="item1">
+    <div class="items1_image"><img src="person.png" class="person" alt=""></div>
+    <div class="items1_name"><h4>JOHN DOE</h4>
+    <p>sep 19,2020</p></div>
+    
+</div>
+<div class="item2">
+    <button class="mybutton">Technology</button>
+</div>
+
+    </div>    
+    
+
+
+
+</div>
+<div class="container c2">
+    <div class="image">
+    <img src="healthy.jpeg" alt="" class="newgadgets">
+</div>
+    <h3 class="c1heading" style="margin-left:1rem;margin-top:1rem;">
+        Healthy Eating Tips
+    </h3>
+    <p class="marginleft" style="margin-top:1rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, aspernatur.</p>
+<div class="items marginleft">
+<div class="item1">
+<div class="items1_image"><img src="person.png" class="person" alt=""></div>
+<div class="items1_name"><h4>Alice Roe</h4>
+<p>sep 19,2020</p></div>
+
+</div>
+<div class="item2">
+<button class="mybutton">Nutrition</button>
+</div>
+
+</div>    
+
+
+
+
+</div>
+<div class="container c3">
+    <div class="image">
+    <img src="travel.jpg" alt="" class="newgadgets">
+    </div>
+    <h3 class="c1heading" style="margin-left:1rem;margin-top:1rem;">
+    Travel Bucket list
+    </h3>
+    <p class="marginleft" style="margin-top:1rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, aspernatur.</p>
+<div class="items marginleft">
+<div class="item1">
+<div class="items1_image"><img src="person.png" class="person" alt=""></div>
+<div class="items1_name"><h4>Ann Public</h4>
+<p>sep 19,2020</p></div>
+
+</div>
+<div class="item2">
+<button class="mybutton">Travel</button>
+</div>
+
+</div>    
+
+
+
+
+</div>
+<div class="container c3">
+    <div class="image">
+    <img src="time.jpg" alt="" class="newgadgets">
+</div>
+    <h3 class="c1heading" style="margin-left:1rem;margin-top:1rem;">
+   Effective Time Management
+    </h3>
+    <p class="marginleft" style="margin-top:1rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, aspernatur.</p>
+<div class="items marginleft">
+<div class="item1">
+<div class="items1_image"><img src="person.png" class="person" alt=""></div>
+<div class="items1_name"><h4>Michael Black</h4>
+<p>sep 19,2020</p></div>
+
+</div>
+<div class="item2">
+<button class="mybutton">Productivity</button>
+</div>
+
+</div>    
+
+
+
+
+</div>
+<div class="container c5">
+    <div class="image">
+    <img src="mindful.jpg" alt="" class="newgadgets">
+    </div>
+    <h3 class="c1heading" style="margin-left:1rem;margin-top:1rem;">
+    Art of Mindfulness
+    </h3>
+    <p class="marginleft" style="margin-top:1rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, aspernatur.</p>
+<div class="items marginleft">
+<div class="item1">
+<div class="items1_image"><img src="person.png" class="person" alt=""></div>
+<div class="items1_name"><h4>James Brown</h4>
+<p>sep 19,2020</p></div>
+
+</div>
+<div class="item2">
+<button class="mybutton">Meditation</button>
+</div>
+
+</div>    
+
+
+
+
+</div>
+<div class="container c6">
+    <div class="image">
+    <img src="diy.jpg" alt="" class="newgadgets">
+    </div>
+    <h3 class="c1heading" style="margin-left:1rem;margin-top:1rem;">
+  DIY Home Decor
+    </h3>
+    <p class="marginleft" style="margin-top:1rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, aspernatur.</p>
+<div class="items marginleft">
+<div class="item1">
+<div class="items1_image"><img src="person.png" class="person" alt=""></div>
+<div class="items1_name"><h4>Richard Roe</h4>
+<p>sep 19,2020</p></div>
+
+</div>
+<div class="item2">
+<button class="mybutton">Home decor</button>
+</div>
+
+</div>    
+
+
+
+
+</div>
+<div class="container c7">
+    <div class="image">
+    <img src="greenenergy.jpg" alt="" class="newgadgets">
+</div>
+    <h3 class="c1heading" style="margin-left:1rem;margin-top:1rem;">
+   Green energy solution
+    </h3>
+    <p class="marginleft" style="margin-top:1rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, aspernatur.</p>
+<div class="items marginleft">
+<div class="item1">
+<div class="items1_image"><img src="person.png" class="person" alt=""></div>
+<div class="items1_name"><h4>Joe Bloggs</h4>
+<p>sep 19,2020</p></div>
+
+</div>
+<div class="item2">
+<button class="mybutton">Sustainability</button>
+</div>
+
+</div>    
+
+
+
+
+</div>
+<div class="container c8">
+    <div class="image">
+    <img src="positive.jpeg" alt="" class="newgadgets">
+    </div>
+    <h3 class="c1heading" style="margin-left:1rem;margin-top:1rem;">
+    The power of positivity
+    </h3>
+    <p class="marginleft" style="margin-top:1rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, aspernatur.</p>
+<div class="items marginleft">
+<div class="item1">
+<div class="items1_image"><img src="person.png" class="person" alt=""></div>
+<div class="items1_name"><h4>Jane Smith</h4>
+<p>sep 19,2020</p></div>
+
+</div>
+<div class="item2">
+<button class="mybutton">Positivity</button>
+</div>
+
+</div>    
+
+
+
+
+</div>
+    </div>
+    <script>
+    function toggleMenu() {
+        let menulist = document.getElementsByClassName("ul-list")[0]; // Access the first element
+        if (menulist.style.maxHeight === "0px" || menulist.style.maxHeight === "") { // Check the height correctly
+            menulist.style.maxHeight = "300px";
+        } else {
+            menulist.style.maxHeight = "0px";
+        }
+    }
+</script>
+    
+</body>
+</html>
